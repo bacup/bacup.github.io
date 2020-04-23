@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://bacup.github.io/"/>
   <updated>2020-04-23T02:14:29.292Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://bacup.github.io/</id>
   
   <author>
     <name>bacup</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/post/hello-world.html"/>
-    <id>http://yoursite.com/post/hello-world.html</id>
+    <link href="https://bacup.github.io/post/hello-world.html"/>
+    <id>https://bacup.github.io/post/hello-world.html</id>
     <published>2020-04-23T02:14:29.292Z</published>
     <updated>2020-04-23T02:14:29.292Z</updated>
     

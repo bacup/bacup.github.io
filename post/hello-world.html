@@ -6,10 +6,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="baidu-site-verification" content="" />
-  <meta name="google-site-verification" content="" />
-  <meta name="msvalidate.01" content="" />
-  <meta name="360-site-verification" content="" />
+  <meta name="baidu-site-verification" content="p7Pz3jlx4t" />
+  <meta name="google-site-verification" content="19ixTFj-X-rXuvZFvR1PMkqSHMXZ5GjN7nhYdYYFm-c" />
+  <meta name="msvalidate.01" content="7E2AEE3378AC93764DEAB411177A21A1" />
+  <meta name="360-site-verification" content="5c7e8a1fdbf35ed6003c48733208f705" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- if page has tags, then add tags to keyword -->
   
@@ -20,7 +20,7 @@
   <link rel="shortcut icon" href="/img/icon.png">
   <title>
     
-    Hello World | bacup
+    Hello World | 极客兔兔
     
   </title>
 
@@ -168,6 +168,19 @@
             </p>
             <!-- 文章末尾的提示 start -->
             
+            <p>
+                本站永久域名<strong>「 <a
+                        href="/post/hello-world.html">bacup.github.io</a>
+                    」</strong>，也可搜索<strong>「 bacup 」</strong>找到我。
+            </p>
+            
+            
+            <p>
+                期待关注我的
+                
+                
+                ，查看最近的文章和动态。
+            </p>
             
             
                 
@@ -181,6 +194,141 @@
     </article>
     <!-- 赞赏 -->
     <!--打赏-->
+
+<style>
+    #reward .reward-btn-wrapper {
+        width: 100px;
+        padding-top: 25px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    #reward .reward-btn {
+        padding: 2px 15px;
+        color: #fff;
+        background-color: #ea6f5a;
+        border-radius: 20px;
+    }
+
+    #reward .reward-code {
+        position: absolute;
+        top: -230px;
+        left: 50%;
+        display: none;
+        width: 360px;
+        height: 240px;
+        margin-left: -180px;
+        padding: 15px 20px;
+        border: 1px solid #e6e6e6;
+        background: #fff;
+        box-shadow: 0 1px 1px 1px #efefef;
+    }
+
+    #reward .reward-code:after,
+    #reward .reward-code:before {
+        position: absolute;
+        content: '';
+        border: 10px solid transparent
+    }
+
+    #reward .reward-code:after {
+        bottom: -19px;
+        left: 50%;
+        margin-left: -10px;
+        border-top-color: #fff
+    }
+
+    #reward .reward-code:before {
+        bottom: -20px;
+        left: 50%;
+        margin-left: -10px;
+        border-top-color: #e6e6e6
+    }
+
+    #reward .qr-code {
+        width: 50%;
+        float: left;
+        padding: 5px;
+    }
+
+    #reward .qr-code p {
+        margin-top: -6px;
+    }
+
+    #reward img {
+        transform: none;
+        -webkit-transform: none;
+        margin-left: 0;
+    }
+
+    #reward img[alt='i'] {
+        width: 20px;
+        height: 20px;
+        z-index: 2;
+        position: absolute;
+        margin: 65px 0 0 65px;
+    }
+
+    #reward img[alt="ali"] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 5px solid #0f9be0;
+    }
+
+    #reward img[alt="wechat"] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 5px solid #3db034;
+    }
+
+    #reward .reward-tip {
+        font-size: 1.2em;
+        margin-bottom: 0;
+        color: #ea6f5a;
+    }
+</style>
+<div id="reward" class="col-xs-12">
+    <div class="reward-btn-wrapper">
+        <div class="reward-btn text-center">赞赏支持</div>
+    </div>
+    <div class="reward-code text-center">
+        <p class="text-center reward-tip"><strong>请我吃胡萝卜 =^_^= </strong></p>
+        <div class="qr-code">
+            <img src="/img/icon.png" alt="i">
+            <img id="reward-ali" src="" alt="ali">
+            <p><small>支付宝</small></p>
+        </div>
+        <div class="qr-code">
+            <img src="/img/icon.png" alt="i">
+            <img id="reward-wechat" src="" alt="wechat">
+            <p><small>微信</small></p>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window, document) {
+        var aliQr = new QRious({ value: 'HTTPS://QR.ALIPAY.COM/FKX060337TUXBAX9LIFJE8' });
+        var wechatQr = new QRious({ value: 'wxp://f2f0qgGBlfD1nZXjvBjievxB0z0fc0W2sBq5' });
+        document.querySelector('#reward-ali').src = aliQr.toDataURL();
+        document.querySelector('#reward-wechat').src = wechatQr.toDataURL();
+
+        var rewardBtn = document.querySelector('#reward .reward-btn-wrapper');
+        var qrCode = document.querySelector('#reward .reward-code')
+        var activeFunc = function (e) {
+            qrCode.style.display = 'block';
+        }
+        var hideFunc = function (e) {
+            qrCode.style.display = 'none';
+        }
+
+        rewardBtn.addEventListener('mouseenter', activeFunc, false)
+        rewardBtn.addEventListener('mouseover', activeFunc, false)
+        rewardBtn.addEventListener('mouseleave', hideFunc, false)
+        qrCode.addEventListener('mouseenter', activeFunc, false)
+        qrCode.addEventListener('mouseover', activeFunc, false)
+        qrCode.addEventListener('mouseleave', hideFunc, false)
+    })(window, document);
+</script>
 
     <!-- 推荐阅读三篇文章 -->
     <div class="col-xs-12">
@@ -305,6 +453,12 @@
         </a>
     </nav>
 
+    
+    <div class="link-list">
+        
+        <a href="https://github.com/geektutu/hexo-theme-geektutu" target="_blank" rel="noopener"><img src="/img/related_links/github.png" /></a>
+        
+    </div>
     
 </div></section>
         
@@ -472,7 +626,7 @@
     <p>
         <small>© 2020 - bacup - </small>
         <small>
-            <a target="_blank" rel="nofollow noopener" href="http://beian.miit.gov.cn/"></a>
+            <a target="_blank" rel="nofollow noopener" href="http://beian.miit.gov.cn/">沪ICP备18001798号-1</a>
         </small>
     </p>
     <p class="footer-hexo">
@@ -486,27 +640,26 @@
         </small>
     </p>
     
-    <p>
-        <small>
-            <span id="busuanzi_container_site_pv">👁<span id="busuanzi_value_site_pv"></span></span> &nbsp;
-            <span id="busuanzi_container_page_pv">📚<span id="busuanzi_value_page_pv"></span></span>
-        </small>
-    </p>
-    
     
 
 </footer>
 
 
-<script>
-    window.addEventListener('load', function () {
-        globalAddScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
-    })
-</script>
-
 <!-- Baidu Tongji -->
 
 
+
+<!-- baidu auto push for seo -->
+<script>
+    window.addEventListener('load', function () {
+        var src = 'http://push.zhanzhang.baidu.com/push.js'
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        globalAddScript(src);
+    })
+</script>
 
 
 
@@ -529,46 +682,6 @@
         })();
     </script>
     
-<script>
-    (function (window, document, undefined) {
-        var hearts = [];
-        var keywords = ["点个赞", "留个言", "赞赏一下", "bacup", "yoursite.com"];
-        function randomInt(max) {
-            return Math.floor(Math.random() * Math.floor(max));
-        }
-        window.addEventListener('click', createWord)
-
-        function createWord(e) {
-            var d = document.createElement("span");
-            d.style.position = 'fixed';
-            d.style.zIndex = 9999;
-            d.style.color = 'rgb(' + [randomInt(255), randomInt(255), randomInt(255)].join(',') + ')';
-            d.innerHTML = keywords[randomInt(keywords.length)];
-            d.onselectstart = function () { return false; }
-
-            hearts.push({ el: d, x: e.clientX - 5, y: e.clientY - 5, alpha: 1, scale: 1 });
-            document.body.appendChild(d);
-        }
-        (function gameloop() {
-            for (var i = 0; i < hearts.length; i++) {
-                heart = hearts[i];
-                if (heart.alpha <= 0) {
-                    document.body.removeChild(heart.el);
-                    hearts.splice(i, 1);
-                    continue;
-                }
-                heart.y -= heart.alpha < 0.5 ? 2 : 1;
-                heart.scale += 0.002;
-                heart.alpha -= 0.013;
-                heart.el.style.transform = 'scale(' + heart.scale + ')';
-                heart.el.style.left = heart.x + 'px';
-                heart.el.style.top = heart.y + 'px';
-            }
-            setTimeout(gameloop, 10)
-        })();
-    })(window, document);
-</script>
-
 </body>
 
 </html>

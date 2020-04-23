@@ -6,10 +6,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="baidu-site-verification" content="" />
-  <meta name="google-site-verification" content="" />
-  <meta name="msvalidate.01" content="" />
-  <meta name="360-site-verification" content="" />
+  <meta name="baidu-site-verification" content="p7Pz3jlx4t" />
+  <meta name="google-site-verification" content="19ixTFj-X-rXuvZFvR1PMkqSHMXZ5GjN7nhYdYYFm-c" />
+  <meta name="msvalidate.01" content="7E2AEE3378AC93764DEAB411177A21A1" />
+  <meta name="360-site-verification" content="5c7e8a1fdbf35ed6003c48733208f705" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- if page has tags, then add tags to keyword -->
   
@@ -238,6 +238,12 @@
     </nav>
 
     
+    <div class="link-list">
+        
+        <a href="https://github.com/geektutu/hexo-theme-geektutu" target="_blank" rel="noopener"><img src="/img/related_links/github.png" /></a>
+        
+    </div>
+    
 </div></section>
             <section class="bg-white box-shadow"><!-- Featured Tags -->
 <style>
@@ -382,7 +388,7 @@
     <p>
         <small>© 2020 - bacup - </small>
         <small>
-            <a target="_blank" rel="nofollow noopener" href="http://beian.miit.gov.cn/"></a>
+            <a target="_blank" rel="nofollow noopener" href="http://beian.miit.gov.cn/">沪ICP备18001798号-1</a>
         </small>
     </p>
     <p class="footer-hexo">
@@ -396,27 +402,26 @@
         </small>
     </p>
     
-    <p>
-        <small>
-            <span id="busuanzi_container_site_pv">👁<span id="busuanzi_value_site_pv"></span></span> &nbsp;
-            <span id="busuanzi_container_page_pv">📚<span id="busuanzi_value_page_pv"></span></span>
-        </small>
-    </p>
-    
     
 
 </footer>
 
 
-<script>
-    window.addEventListener('load', function () {
-        globalAddScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
-    })
-</script>
-
 <!-- Baidu Tongji -->
 
 
+
+<!-- baidu auto push for seo -->
+<script>
+    window.addEventListener('load', function () {
+        var src = 'http://push.zhanzhang.baidu.com/push.js'
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        globalAddScript(src);
+    })
+</script>
 
 
 
@@ -439,46 +444,6 @@
         })();
     </script>
     
-<script>
-    (function (window, document, undefined) {
-        var hearts = [];
-        var keywords = ["点个赞", "留个言", "赞赏一下", "bacup", "yoursite.com"];
-        function randomInt(max) {
-            return Math.floor(Math.random() * Math.floor(max));
-        }
-        window.addEventListener('click', createWord)
-
-        function createWord(e) {
-            var d = document.createElement("span");
-            d.style.position = 'fixed';
-            d.style.zIndex = 9999;
-            d.style.color = 'rgb(' + [randomInt(255), randomInt(255), randomInt(255)].join(',') + ')';
-            d.innerHTML = keywords[randomInt(keywords.length)];
-            d.onselectstart = function () { return false; }
-
-            hearts.push({ el: d, x: e.clientX - 5, y: e.clientY - 5, alpha: 1, scale: 1 });
-            document.body.appendChild(d);
-        }
-        (function gameloop() {
-            for (var i = 0; i < hearts.length; i++) {
-                heart = hearts[i];
-                if (heart.alpha <= 0) {
-                    document.body.removeChild(heart.el);
-                    hearts.splice(i, 1);
-                    continue;
-                }
-                heart.y -= heart.alpha < 0.5 ? 2 : 1;
-                heart.scale += 0.002;
-                heart.alpha -= 0.013;
-                heart.el.style.transform = 'scale(' + heart.scale + ')';
-                heart.el.style.left = heart.x + 'px';
-                heart.el.style.top = heart.y + 'px';
-            }
-            setTimeout(gameloop, 10)
-        })();
-    })(window, document);
-</script>
-
 </body>
 
 </html>
