@@ -467,10 +467,23 @@
         </small>
     </p>
     
+    <p>
+        <small>
+            <span id="busuanzi_container_site_pv">👁<span id="busuanzi_value_site_pv"></span></span> &nbsp;
+            <span id="busuanzi_container_page_pv">📚<span id="busuanzi_value_page_pv"></span></span>
+        </small>
+    </p>
+    
     
 
 </footer>
 
+
+<script>
+    window.addEventListener('load', function () {
+        globalAddScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+    })
+</script>
 
 <!-- Baidu Tongji -->
 
@@ -509,46 +522,6 @@
         })();
     </script>
     
-<script>
-    (function (window, document, undefined) {
-        var hearts = [];
-        var keywords = ["点个赞", "留个言", "赞赏一下", "bacup", "bacup.github.io"];
-        function randomInt(max) {
-            return Math.floor(Math.random() * Math.floor(max));
-        }
-        window.addEventListener('click', createWord)
-
-        function createWord(e) {
-            var d = document.createElement("span");
-            d.style.position = 'fixed';
-            d.style.zIndex = 9999;
-            d.style.color = 'rgb(' + [randomInt(255), randomInt(255), randomInt(255)].join(',') + ')';
-            d.innerHTML = keywords[randomInt(keywords.length)];
-            d.onselectstart = function () { return false; }
-
-            hearts.push({ el: d, x: e.clientX - 5, y: e.clientY - 5, alpha: 1, scale: 1 });
-            document.body.appendChild(d);
-        }
-        (function gameloop() {
-            for (var i = 0; i < hearts.length; i++) {
-                heart = hearts[i];
-                if (heart.alpha <= 0) {
-                    document.body.removeChild(heart.el);
-                    hearts.splice(i, 1);
-                    continue;
-                }
-                heart.y -= heart.alpha < 0.5 ? 2 : 1;
-                heart.scale += 0.002;
-                heart.alpha -= 0.013;
-                heart.el.style.transform = 'scale(' + heart.scale + ')';
-                heart.el.style.left = heart.x + 'px';
-                heart.el.style.top = heart.y + 'px';
-            }
-            setTimeout(gameloop, 10)
-        })();
-    })(window, document);
-</script>
-
 </body>
 
 </html>
