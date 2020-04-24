@@ -38,4 +38,52 @@
     
   </entry>
   
+  <entry>
+    <title>TensorFlow入门(一) - mnist手写数字识别(网络搭建)</title>
+    <link href="https://bacup.github.io/post/tensorflow-mnist-simplest.html"/>
+    <id>https://bacup.github.io/post/tensorflow-mnist-simplest.html</id>
+    <published>2017-12-09T03:51:24.000Z</published>
+    <updated>2020-04-24T06:44:10.212Z</updated>
+    
+    <summary type="html">
+    
+      TensorFlow 入门系列文章，mnist手写数字识别(网络搭建)。
+    
+    </summary>
+    
+    <content src="https://bacup.github.io/post/tensorflow-mnist-simplest/xxx.jpg" type="image" />
+    
+    
+      <category term="TensorFlow教程" scheme="https://bacup.github.io/categories/TensorFlow%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="机器学习" scheme="https://bacup.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="tensorflow" scheme="https://bacup.github.io/tags/tensorflow/"/>
+    
+      <category term="mnist" scheme="https://bacup.github.io/tags/mnist/"/>
+    
+      <category term="Python" scheme="https://bacup.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于我</title>
+    <link href="https://bacup.github.io/post/about.html"/>
+    <id>https://bacup.github.io/post/about.html</id>
+    <published>2017-07-03T03:51:24.000Z</published>
+    <updated>2020-04-24T06:43:21.524Z</updated>
+    
+    <summary type="html">
+    
+      极客兔兔的小站，致力于分享一些技术教程和有趣的技术实践。
+    
+    </summary>
+    
+    
+    
+      <category term="关于我" scheme="https://bacup.github.io/tags/%E5%85%B3%E4%BA%8E%E6%88%91/"/>
+    
+  </entry>
+  
 </feed>
